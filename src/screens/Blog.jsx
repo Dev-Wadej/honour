@@ -7,6 +7,7 @@ import BlockContent from "@sanity/block-content-to-react";
 import sanityClient from "../services/sanityClient";
 import { monthInWords } from "../utils/utils";
 import MetaDecorator from "../utils/MetaDecorator";
+import { Helmet } from "react-helmet-async";
 
 function Blog () {
   const blogData = useSinglePostData();
@@ -26,6 +27,10 @@ function Blog () {
         imageUrl={blogData?.mainImage?.asset?.url}
         imageAlt={blogData?.title}
       />
+      <Helmet>
+        <title>Learning React Helmet!</title>
+        <meta name='description' content={blogData?.body?.[0]?.children?.[0]?.text} />
+      </Helmet>
       <Navbar />
 
       <div className="">
