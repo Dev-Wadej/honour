@@ -1,0 +1,36 @@
+// ---------- import abstract folder ---------
+@import "./abstracts/variable.scss";
+
+// ----------- import base folder ---------
+@import "./base/base.scss";
+
+
+
+// ----------- import screens folder ---------
+
+@import "./screens/about";
+
+@import "./screens/home";
+
+@import "./screens/team";
+@import "./screens/news";
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+
+// ----------- import components folder ---------
+
+@import "../components/Navbar/navbar";
+@import "../components/Footer/footer";
+@import "../components/Tabmenu/tab";
+@import "../components/Word/word.scss";
+// @import "../components/Navbar/navbar.scss";
+// @import "../components/Footer/footer.scss";
+
+
+
+
+

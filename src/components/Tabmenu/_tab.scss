@@ -1,0 +1,75 @@
+.tab-menu {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+
+.tab-menu li {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  margin-right: 5px;
+  user-select: none;
+}
+
+.tab-menu li.active {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.tab-content {
+  border-radius: 16px;
+  margin-top: 10px;
+  text-align: center;
+  box-shadow: 0px 1px 7px #eaeaea75;
+  h4{
+    margin-bottom: 2rem;
+  }
+}.tab-buttons {
+  display: flex;
+}
+
+.tab-buttons button {
+
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin: 61px 40px;
+}
+
+.tab-buttons button.active {
+  border-color: #0B223B;
+  color:#0B223B;
+}
+
+.tab-content {
+  padding: 50px;
+  margin-top: 4rem;
+  background: #0B223B;
+  color: white;
+}
+.tab-hr{
+  margin-top: -63px;
+}
+
+@media screen and (max-width: 600px) {
+
+.tab-buttons {
+  display: grid;
+}
+.tab-buttons button {
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin: 21px 110px;
+}
+
+.tab-content {
+  padding: 20px;
+  margin-top: 4rem;
+}
+.tab-hr{display: none;}
+}
