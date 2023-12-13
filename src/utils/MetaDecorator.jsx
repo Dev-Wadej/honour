@@ -7,9 +7,9 @@ const metaDecorator = {
 }
 
 const MetaDecorator = ({ title, description, imageUrl, imageAlt }) => {
-  console.log({ title, description, imageUrl, })
-  console.log(metaDecorator.hostname + window.location.pathname + window.location.search)
-  console.log(metaDecorator.hostname + imageUrl)
+  // console.log({ title, description, imageUrl, })
+  // console.log(metaDecorator.hostname + window.location.pathname + window.location.search)
+  // console.log(metaDecorator.hostname + imageUrl)
   return (
     <Helmet>
       <title>{title}</title>
